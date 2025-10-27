@@ -12,7 +12,7 @@ fi
 # Création des fichiers .ipynb manquants
 echo "Création des fichiers .ipynb manquants..."
 for py_file in *_ntb.py; do
-    ipynb_file="${py_file%.py}.ipynb"
+    ipynb_file="${py_file%_ntb.py}.ipynb"
     if [ ! -f "$ipynb_file" ]; then
         echo "Création de $ipynb_file..."
         python -m jupytext --to notebook "$py_file"
