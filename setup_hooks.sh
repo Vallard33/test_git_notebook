@@ -15,7 +15,7 @@ for py_file in *_ntb.py; do
     ipynb_file="${py_file/_ntb.py/.ipynb}"
     if [ ! -f "$ipynb_file" ]; then
         echo "Création de $ipynb_file..."
-        python -m jupytext --to notebook "$py_file"
+        python -m jupytext --to notebook "$py_file" --output "$ipynb_file"
     else
         echo "$ipynb_file existe déjà."
     fi
