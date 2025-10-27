@@ -12,3 +12,6 @@
 # wvfdvxc
 
 # %% vscode={"languageId": "plaintext"}
+print("gnagnagna")
+
+# %% vscode={"languageId": "plaintext"}
